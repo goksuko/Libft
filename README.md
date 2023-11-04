@@ -1,2 +1,3 @@
 # Libft
-passed Libft
+mandatory passed
+bonuses not tested
