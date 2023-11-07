@@ -77,9 +77,7 @@ char	**ft_split(char const *s, char c)
 {
 	int		string_nb;
 	char	**matrix;
-	int		i;
-
-	i = 0;
+	
 	if (s == NULL)
 		return (NULL);
 	string_nb = count_strings(s, c);
@@ -93,7 +91,8 @@ char	**ft_split(char const *s, char c)
 	return (matrix);
 }
 
-/*int main(void)
+/*
+int main(void)
 {
 	int i;
 	char str[] = "hello!";
@@ -106,4 +105,5 @@ char	**ft_split(char const *s, char c)
 		printf("%s\n", matrix[i]);
 		i++;
 	}
-}*/
+}
+*/

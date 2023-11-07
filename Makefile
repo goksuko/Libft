@@ -51,7 +51,7 @@ SOURCES_BONUS = \
 OBJS_MAND = $(SOURCES_MAND:.c=.o)
 OBJS_BONUS = $(SOURCES_BONUS:.c=.o)
 
-CC = clang
+CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
 AR = ar
