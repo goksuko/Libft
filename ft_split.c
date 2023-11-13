@@ -6,7 +6,7 @@
 /*   By: akaya-oz <akaya-oz@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/13 10:48:14 by akaya-oz      #+#    #+#                 */
-/*   Updated: 2023/11/04 12:49:58 by akaya-oz      ########   odam.nl         */
+/*   Updated: 2023/11/13 16:51:04 by akaya-oz      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,7 @@ char	**ft_split(char const *s, char c)
 {
 	int		string_nb;
 	char	**matrix;
-	
+
 	if (s == NULL)
 		return (NULL);
 	string_nb = count_strings(s, c);
