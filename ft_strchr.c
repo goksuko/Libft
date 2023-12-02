@@ -6,7 +6,7 @@
 /*   By: akaya-oz <akaya-oz@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/20 11:28:04 by akaya-oz      #+#    #+#                 */
-/*   Updated: 2023/10/27 13:51:06 by akaya-oz      ########   odam.nl         */
+/*   Updated: 2023/12/02 10:17:44 by akaya-oz      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,18 +21,22 @@ c in the string s.*/
 
 char	*ft_strchr(const char *s, int c)
 {
-	char	*str;
+	int	i;
 
-	str = (char *)s;
-	while (*str != (char)c)
+	i = 0;
+	if (!s || !c)
+		return (NULL);
+	if (c == '\0')
+		return ((char *)&s[ft_strlen((char *)s)]);
+	while (s[i])
 	{
-		if (*str == '\0')
+		if (s[i] == (unsigned char)c)
 		{
-			return (0);
+			return ((char *)&s[i]);
 		}
-		str++;
+		i++;
 	}
-	return (str);
+	return (NULL);
 }
 /*
 int	main(void)

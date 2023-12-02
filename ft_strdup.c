@@ -6,7 +6,7 @@
 /*   By: akaya-oz <akaya-oz@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/20 11:31:02 by akaya-oz      #+#    #+#                 */
-/*   Updated: 2023/10/25 12:07:08 by akaya-oz      ########   odam.nl         */
+/*   Updated: 2023/12/02 10:02:01 by akaya-oz      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,20 +22,22 @@ with  errno  set  to indicate the cause of the error.*/
 
 char	*ft_strdup(const char *s)
 {
-	char	*copy;
+	char	*temp;
 	size_t	i;
 
-	copy = malloc(sizeof(char) * ft_strlen(s) + 1);
-	if (!copy)
+	if (!s)
+		return (NULL);
+	temp = (char *)malloc((ft_strlen((char *)s) + 1) * sizeof(char));
+	if (!temp)
 		return (NULL);
 	i = 0;
-	while (s[i] != '\0')
+	while (s[i])
 	{
-		copy[i] = s[i];
+		temp[i] = s[i];
 		i++;
 	}
-	copy[i] = '\0';
-	return (copy);
+	temp[i] = '\0';
+	return (temp);
 }
 /*
 int	main(void)
