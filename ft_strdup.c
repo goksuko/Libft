@@ -6,7 +6,7 @@
 /*   By: akaya-oz <akaya-oz@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/20 11:31:02 by akaya-oz      #+#    #+#                 */
-/*   Updated: 2023/12/02 10:02:01 by akaya-oz      ########   odam.nl         */
+/*   Updated: 2023/12/02 12:06:42 by akaya-oz      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,24 @@ char	*ft_strdup(const char *s)
 	temp[i] = '\0';
 	return (temp);
 }
+
+// char	*ft_strdup(const char *s)
+// {
+// 	char	*copy;
+// 	size_t	i;
+
+// 	copy = malloc(sizeof(char) * ft_strlen(s) + 1);
+// 	if (!copy)
+// 		return (NULL);
+// 	i = 0;
+// 	while (s[i] != '\0')
+// 	{
+// 		copy[i] = s[i];
+// 		i++;
+// 	}
+// 	copy[i] = '\0';
+// 	return (copy);
+// }
 /*
 int	main(void)
 {

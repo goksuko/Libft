@@ -6,7 +6,7 @@
 /*   By: akaya-oz <akaya-oz@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/20 11:28:04 by akaya-oz      #+#    #+#                 */
-/*   Updated: 2023/12/02 10:17:44 by akaya-oz      ########   odam.nl         */
+/*   Updated: 2023/12/02 12:03:09 by akaya-oz      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,22 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return (NULL);
 }
+
+// char	*ft_strchr(const char *s, int c)
+// {
+// 	char	*str;
+
+// 	str = (char *)s;
+// 	while (*str != (char)c)
+// 	{
+// 		if (*str == '\0')
+// 		{
+// 			return (0);
+// 		}
+// 		str++;
+// 	}
+// 	return (str);
+// }
 /*
 int	main(void)
 {
