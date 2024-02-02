@@ -6,7 +6,7 @@
 /*   By: akaya-oz <akaya-oz@student.42.fr>            +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/10 10:37:09 by akaya-oz      #+#    #+#                 */
-/*   Updated: 2023/11/04 16:16:17 by akaya-oz      ########   odam.nl         */
+/*   Updated: 2024/02/02 11:20:03 by akaya-oz      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		len = ft_strlen(s + start);
 	sub = malloc(sizeof(char) * (len + 1));
 	if (!sub)
-		return (0);
+		return (NULL);
 	ft_strlcpy(sub, s + start, len + 1);
 	return (sub);
 }
